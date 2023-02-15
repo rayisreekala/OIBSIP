@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">   
+     <title>Calculator</title>
+</head>
+
+<body>
+ <p> CALCULATOR</p>
+    <div class="first">
+        <div class="second">
+            
+            <input type="text" placeholder="0" id="n">
+           
+            <button onclick="display( '(' )">(</button>
+            <button onclick="display(')')">)</button>
+            <button onclick="ans()">Ans</button>
+            <button onclick="del()">Del</button>
+            <button onclick="cl()">Cl</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('%')">%</button>
+            <button onclick="display('|')">|</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('*')">*</button>
+            <button onclick="display('/')">/</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('+')">+</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="display('.')">.</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="display('+-')">+-</button>
+            <button onclick="Calculate()" class="equal">=</button>
+
+
+        </div>
+    </div>
+    <script>
+        let os=document.getElementById("n");
+        function display(number)
+        {
+            os.value +=number;
+        }
+        function Calculate(){
+            try{
+                os.value=eval(os.value);
+            }
+            catch(err){
+                alert("Invalid");
+                cl();
+            }
+        }
+        function cl(){
+        os.value = " ";
+    }
+        function del()
+        {
+            os.value=os.value.slice(0,-1);
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(157, 204, 216);
+}
+.first{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second{
+     background-color: rgb(128,128,128);  
+     /* background-color: white; */
+     border-radius: 30px;
+     padding: 15px;
+    box-shadow: inset 5px 5px 12px black,
+                      5px 5px 12px rgba(0,0,0,.16);
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+
+}
+input{
+    grid-column: span 5;
+    height: 90px;
+    width: 290px;
+    background-color:rgb(80, 78, 78) ;  
+    box-shadow: inset -5px -5px 12px black,
+                inset 5px 5px 12px rgba(0,0,0,.16);
+    /* box-shadow: -5px 5px 12px rgb(80,80,80); */
+    border: none;
+    border-radius: 20px;
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 38px;
+    margin-bottom: 38px;
+
+    padding: 20px;
+    
+    
+}
+button{
+    height: 50px;
+    width: 50px;
+    /* border-radius: 50%; */
+    background-color:rgb(128,128,128); ;
+    border: none;
+    box-shadow:  -5px -5px 12px rgb(0,0,0),
+                  5px 5px 12px rgba(0,0,0,.16);
+   margin: 10px;
+   font-size: 18px;
+   border-radius: 50%;
+   color: white;
+   
+}
+.equal{
+    width: 115px;
+    height: 50px;
+    border-radius: 40px;
+}
+p{
+    text-align: center;
+    font-size: 50px;
+    color:rgb(25, 27, 27);
+    text-shadow:  -2px 8px 12PX  rgb(22, 21, 21);
+
+    font-family: 'Times New Roman', Times, serif;
+                       
+}
