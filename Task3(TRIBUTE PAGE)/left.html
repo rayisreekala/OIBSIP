@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:black;
+color:white;
+
+/* font-family: Copperplate, Papyrus, fantasy; */
+    }
+    .typewriter{
+        position: relative;
+        font-size: 200%;
+        font-weight: 800;
+        margin-top: 80px;
+
+    }
+    .typewriter::after{
+        content: '|';
+        position: absolute;
+        right: 0;
+        font-family: Copperplate, Papyrus, fantasy;
+        /* color:yellow;  */
+        font-size: 200%;
+        font-weight: 500; 
+        background-color: rgb(3, 3, 3);
+        width: 100%;
+        animation:typing 7s steps(200) alternate infinite,
+                    line 1s infinite;
+
+    }
+    @keyframes typing {
+to{
+            width: 0%;
+        }
+        
+        
+    }
+    @keyframes line {
+        100%{
+            color: transparent;
+        }
+        
+    }
+    .large{
+        font-weight: bold;
+        font-size: 180%;
+         color: rgb(79, 183, 220);  
+    }
+    .red{
+        color: rgb(205, 29, 87);
+        font-weight: bold;
+        font-size: 200%;
+    }
+    h4{
+        /* color:rgb(205, 29, 87); */
+        color:rgb(95, 228, 224);
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .m{
+        color: rgb(205, 29, 87);
+        line-height: 26pt;
+    }
+.autotype{
+margin-top:70px;
+}
+a{
+    position: absolute;
+    top:650px;
+    /* color: blue; */
+    /* border: 2px solid green; */
+    font-size: 20px;
+    /* margin-left: 30px; */
+    
+}
+P{
+    font-size: 10px;
+    margin-left: 150px;
+    color: aqua;
+    
+font-family: Copperplate, Papyrus, fantasy;
+    
+}
+
+
+</style>
+<!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+<body>
+    <!-- <h1 class="autotype"></h1> -->
+    <h4>powerful Quotes of <span class="m">MOTHER<br>TERESA</span></h4>
+    <hr>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <h1 class="autotype"></h1>
+    <script>
+        var typed = new Typed(".autotype",{
+    // <!-- <p class="typewriter"><q> Not <span class="large">all of us</span> can <span class="large">do great things.</span> But <span class="large">we </span>can do small <span class="large"> things </span>with great <span class="red">love</span>. </q></p> -->
+            strings:["<q >Not <b><span class='large' >all of us</span><br> can <span class='large'>do great things.</span><br> But <span class='large'>we </span>can do<br> small <span class='large'> things<br> </span>with great <span class='red'>love</span>.</span></q><P><br>- &nbsp;MOTHER &nbsp; TERESA</P>"],
+             typeSpeed: 70,
+             
+             
+
+        }
+        )
+
+
+    // <!-- <p>im sreekala rayi</p> -->
+    // <!-- <p class="typewriter"><q> Not <span class="large">all of us</span> can <span class="large">do great things.</span> But <span class="large">we </span>can do small <span class="large"> things </span>with great <span class="red">love</span>. </q></p> -->
+</script>
+<a href="services.html">Quote</a>
+
+    
+</body>
+</html>
